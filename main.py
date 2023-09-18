@@ -130,5 +130,43 @@ class App:
                     self.cleaned_data_path_var.set(cleaned_data_path.strip())
                     self.brave_profile_path_var.set(brave_profile_path.strip())
                     self.brave_executable_path_var.set(brave_executable_path.strip())
-                    self.chrome_driver
-        except: print(f"Finished")
+                    self.chrome_driver_path_var.set(chrome_driver_path.strip())
+        except FileNotFoundError:
+            pass
+    
+    def save_values(self, input_path, output_path, cleaned_data_path, brave_profile_path, brave_executable_path, chrome_driver_path):
+        with open("saved_values.txt", "w") as file:
+            file.write(f"{input_path}\n")
+            file.write(f"{output_path}\n")
+            file.write(f"{cleaned_data_path}\n")
+            file.write(f"{brave_profile_path}\n")
+            file.write(f"{brave_executable_path}\n")
+            file.write(f"{chrome_driver_path}\n")
+        # Read and process input data
+        entries = self.read_and_process_input(input_path)
+
+        # Initialize web scraping components based on the input from the GUI
+        driver = self.initialize_web_scraping(brave_profile_path, brave_executable_path, chrome_driver_path)
+
+        # Scrape and save links
+        self.scrape_and_save_links(driver, entries, output_path)
+
+    def read_and_process_input(self, input_file_path):
+        with open(input_file_path, 'r') as input_file:
+            data = input_file.read()
+
+        entries = re.findall(r'^(.+?):\s+(https?://\S+)', data, flags=re.MULTILINE)
+        return entries
+
+    def initialize_web_scraping(self, profile_path, brave_path, driver_path):
+        chrome_options = Options()
+        chrome_options.binary_location = brave_path
+        chrome_options.add_argument('--user-data-dir=' + profile_path)
+
+        service = Service(driver_path)
+        return webdriver.Chrome(service=service, options=chrome_options)
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
