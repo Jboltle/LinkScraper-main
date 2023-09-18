@@ -1,0 +1,6 @@
+C:/Users/Administrator/Desktop/Web Scraper/input.txt
+C:/Users/Administrator/Desktop/Web Scraper/output.txt
+C:/Users/Administrator/Desktop/Web Scraper/cleaned data.txt
+C:/Users/Jon/AppData/Local/BraveSoftware
+C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe
+C:/Users/Administrator/Desktop/Web Scraper/chromedriver.exe
