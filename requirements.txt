@@ -1,2 +1,101 @@
+Name: selenium
+Version: 4.12.0
+Summary: 
+Home-page: https://www.selenium.dev
+Author: 
+Author-email: 
+License: Apache 2.0
+Location: /usr/local/python/3.10.8/lib/python3.10/site-packages
+Requires: certifi, trio, trio-websocket, urllib3
 
-pip install tkinter 
+
+Name: tk
+Version: 0.1.0
+Summary: TensorKit is a deep learning helper between Python and C++.
+Home-page: https://github.com/atranitell/TensorKit
+Author: Kai Jin
+Author-email: atranitell@gmail.com
+License: Apache 2.0 Licence
+Location: /usr/local/python/3.10.8/lib/python3.10/site-packages
+Requires: 
+Required-by: 
+
+
+Name: bs4
+Version: 0.0.1
+Summary: Screen-scraping library
+Home-page: https://pypi.python.org/pypi/beautifulsoup4
+Author: Leonard Richardson
+Author-email: leonardr@segfault.org
+License: MIT
+Location: /usr/local/python/3.10.8/lib/python3.10/site-packages
+Requires: beautifulsoup4
+Required-by: 
+
+
+
+Name: requests
+Version: 2.31.0
+Summary: Python HTTP for Humans.
+Home-page: https://requests.readthedocs.io
+Author: Kenneth Reitz
+Author-email: me@kennethreitz.org
+License: Apache 2.0
+Location: /home/codespace/.local/lib/python3.10/site-packages
+Requires: certifi, charset-normalizer, idna, urllib3
+Required-by: jupyterlab_server, nbdime
+
+
+
+
+
+
+
+
+
+
+_libgcc_mutex             0.1                        main  
+boltons                   23.0.0          py310h06a4308_0  
+brotlipy                  0.7.0           py310h7f8727e_1002  
+bzip2                     1.0.8                h7b6447c_0  
+ca-certificates           2023.08.22           h06a4308_0  
+certifi                   2023.7.22       py310h06a4308_0  
+cffi                      1.15.0          py310hd667e15_1  
+charset-normalizer        2.0.4                    pypi_0    pypi
+conda                     23.7.4          py310h06a4308_0  
+conda-package-handling    2.2.0           py310h06a4308_0  
+conda-package-streaming   0.9.0           py310h06a4308_0  
+cryptography              41.0.2          py310h774aba0_0  
+idna                      3.4             py310h06a4308_0  
+jsonpatch                 1.32                     pypi_0    pypi
+jsonpointer               2.1                      pypi_0    pypi
+ld_impl_linux-64          2.38                 h1181459_1  
+libffi                    3.3                  he6710b0_2  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libuuid                   1.0.3                h7f8727e_2  
+ncurses                   6.3                  h7f8727e_2  
+openssl                   1.1.1w               h7f8727e_0  
+packaging                 23.0            py310h06a4308_0  
+pip                       23.2.1          py310h06a4308_0  
+pluggy                    1.0.0           py310h06a4308_1  
+pycosat                   0.6.3           py310h7f8727e_0  
+pycparser                 2.21                     pypi_0    pypi
+pyopenssl                 23.2.0          py310h06a4308_0  
+pysocks                   1.7.1           py310h06a4308_0  
+python                    3.10.4               h12debd9_0  
+readline                  8.1.2                h7f8727e_1  
+requests                  2.31.0          py310h06a4308_0  
+ruamel.yaml               0.16.10         py310h7f8727e_1  
+ruamel.yaml.clib          0.2.6           py310h7f8727e_0  
+setuptools                68.0.0          py310h06a4308_0  
+sqlite                    3.38.5               hc218d9a_0  
+tk                        8.6.12               h1ccaba5_0  
+toolz                     0.12.0          py310h06a4308_0  
+tqdm                      4.65.0          py310h2f386ee_0  
+tzdata                    2023c                h04d1e81_0  
+urllib3                   1.26.16         py310h06a4308_0  
+wheel                     0.38.4          py310h06a4308_0  
+xz                        5.2.5                h7f8727e_1  
+zlib                      1.2.12               h7f8727e_2  
+zstandard                 0.15.2          py310h7f8727e_0  
